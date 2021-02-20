@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WELCOM Page</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img src="images/logo1.png" class="logo">
+        <nav>
+          <ul id="menulist">
+            
+            <li><a href="">MAIN</a></li>
+            <li><a href="">PROJECTS</a></li>
+            <li><a href="">OTHERS</a></li>
+            <li><a href="http://younes.bounceme.net/about.html">ABOUT</a></li>
+            
+          </ul>
+        </nav>
+        <img src="images/menu.png" class="menu-icon" onclick="togglemenu()" >
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <h2>MAIN PAGE </h2><br><br><h1>THIS IS MY New Website </h1>
+          <h3>Check It Out </h3>
+          <p>(Have Fun /)</p>
+          <h4>Explore</h4>
+          <button type="button">ThiS WaY <img src="images/arrow.png"</button>
+        </div>
+        <div class="col-2">
+          <img src="images/logo1.png" class="controller">
+          <div class="add-btn">
+            <!--<img src="images/add.png" >
+            <p><small>Add to me </small></p>-->
+          </div>
+          
+        </div>
+        <div class="col-3">
+          <div class="color-box"></div>
+
+        </div>
+      </div>
+      <div class="sociallinks">
+        <img src="images/fb.png" >
+        <img src="images/tw.png" >
+        <img src="images/ig.png" >
+      </div>
+
+    </div>
+
+    <script>
+      var menulist = document.getElementById("menulist");
+
+      menulist.style.maxHeight= "0px";
+
+     function togglemenu()
+     {
+       if (menulist.style.maxHeight == "0px") 
+       {
+         menulist.style.maxHeight = "140px";
+       }
+       else
+        {
+         menulist.style.maxHeight = "0px";
+        }
+     }
+    </script>
+<p> by M.Younes </p>
+
+  </body>
+</html>
