@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="style2.css">
+  <title>younees Website</title>
+</head>
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero"><h1><span>M</span>Ouri <span>Y</span>Ounes</h1></a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger"><div class="bar"></div></div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#Downloads" data-after="Download">Downloads</a></li>
+            <li><a href="#services" data-after="Service">Services</a></li>
+            <li><a href="#img-slider" data-after="img-slider">img-slider</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Welcom, <span></span></h1>
+        <h1>To My Resume <span></span></h1>
+        <h1>Download page <span></span></h1>
+        <a href="#services" type="button" class="cta">Explore More</a>
+        
+        
+      </div>
+    </div>
+
+  </section>
+  <!-- End Hero Section  -->
+  <section id="Downloads">
+    <div class="services container">
+      <div class="Downloads-top">
+        <h1 class="section-title">D<span>o</span>wn<span>l</span>oads</h1>
+        <p>Thanks for coming but unfortunatly i still dident make the resume but i will !</p>
+        <a href="#services" type="button" class="cta">Download</a>
+        
+      </div>
+    </div>
+  </section>
+  <!-- Service Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">Serv<span>i</span>ces</h1>
+        <p>this section contains all the information about what i do and what i make!</p>
+      </div>
+      <div class="service-bottom">
+        <div class="service-item">
+          <div class="icon"><img src="img/icons8-game-controller-100 (1).png"/></div>
+          <h2>Game Design</h2>
+          <p>Iam a very beginner indie game developer i started creating games 1 year ago..!</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="img/icons8-youtube-squared-500.png"/></div>
+          <h2>Web Design</h2>
+          <p>nothing is here yet, you can just skip this part i dident have time to finich all this!</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
+          <h2>Web Design</h2>
+          <p>nothing is here yet, you can just skip this part i dident have time to finich all this!</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
+          <h2>Web Design</h2>
+          <p>nothing is here yet, you can just skip this part i dident have time to finich all this!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- End Service Section -->
+  <!--------------------------- this is my so cool        --------------------------------------->
+<section id="img-slider">
+   <body1>
+    <div class="img-slider">
+      <div class="slide active">
+        <img src="1.jpg" alt="">
+        <div class="info">
+          <h2>Slide 01</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="2.jpg" alt="">
+        <div class="info">
+          <h2>Slide 02</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="3.jpg" alt="">
+        <div class="info">
+          <h2>Slide 03</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="4.jpg" alt="">
+        <div class="info">
+          <h2>Slide 04</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="5.jpg" alt="">
+        <div class="info">
+          <h2>Slide 05</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div> 
+	  <div class="slide">
+        <img src="5.jpg" alt="">
+        <div class="info">
+          <h2>Slide 06</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="navigation">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+		<div class="btn"></div>
+		<div class="btn"></div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+    var slides = document.querySelectorAll('.slide');
+    var btns = document.querySelectorAll('.btn');
+    let currentSlide = 1;
+
+    // Javascript for image slider manual navigation
+    var manualNav = function(manual){
+      slides.forEach((slide) => {
+        slide.classList.remove('active');
+
+        btns.forEach((btn) => {
+          btn.classList.remove('active');
+        });
+      });
+
+      slides[manual].classList.add('active');
+      btns[manual].classList.add('active');
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        manualNav(i);
+        currentSlide = i;
+      });
+    });
+
+    // Javascript for image slider autoplay navigation
+    var repeat = function(activeClass){
+      let active = document.getElementsByClassName('active');
+      let i = 1;
+
+      var repeater = () => {
+        setTimeout(function(){
+          [...active].forEach((activeSlide) => {
+            activeSlide.classList.remove('active');
+          });
+
+        slides[i].classList.add('active');
+        btns[i].classList.add('active');
+        i++;
+
+        if(slides.length == i){
+          i = 0;
+        }
+        if(i >= slides.length){
+          return;
+        }
+        repeater();
+      }, 10000);
+      }
+      repeater();
+    }
+    repeat();
+    </script>
+  </body1>
+  </section>
+   <!--------------------------- END!! this is my so cool --------------------------------------->
+ <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div><h1 class="section-title">Contact <span>info</span></h1></div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png"/></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>+213 0793 82 17 83</h2>
+            <h2>+213 0793 82 17 83</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png"/></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>moutiyoubes@gmail.com</h2>
+            <h2>bacyounes1234@gmail.com</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png"/></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>Algeria, bejaia, chemini</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand"><h1><span>M</span>ouri <span>Y</span>ounes</h1></div>
+      <h2>Your Complete Web Experience</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://facebook.com/mouri.younes.90"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.instagram.com/jou1232/"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="https://twitter.com/khaled35357500"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.behance.net/theshow1"><img src="https://img.icons8.com/bubbles/100/000000/behance.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.behance.net/theshow1"><img src="img/icons8-youtube-500.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.behance.net/theshow1"><img src="img/icons8-github-500.png"/></a>
+        </div>
+      </div>
+      <p>Copyright © 2020 M.younes. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+
+
+</body>
+</html>
